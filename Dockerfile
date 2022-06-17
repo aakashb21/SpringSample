@@ -6,6 +6,4 @@ COPY . /usr/src/app
 
 WORKDIR /usr/src/app
 
-RUN java -jar SpringSample-0.0.1-SNAPSHOT.war
-
-ENTRYPOINT ["java","-jar","target/SpringSample-0.0.1-SNAPSHOT.war.jar"]
+ENTRYPOINT ["java","-jar","target/SpringSample-0.0.1-SNAPSHOT.war"]
