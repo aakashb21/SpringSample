@@ -1,6 +1,6 @@
 FROM openjdk:8-jdk-alpine
 
-RUN mkdir -m /usr/sc/app
+RUN mkdir -m /usr/src/app
 
 COPY . /usr/src/app
 
