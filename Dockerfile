@@ -1,0 +1,11 @@
+FROM openjdk:8-jdk-alpine
+
+RUN mkdir -m /usr/sc/app
+
+COPY . /usr/src/app
+
+WORKDIR /usr/src/app
+
+RUN java -jar SpringSample-0.0.1-SNAPSHOT.war
+
+ENTRYPOINT ["java","-jar","target/SpringSample-0.0.1-SNAPSHOT.war.jar"]
